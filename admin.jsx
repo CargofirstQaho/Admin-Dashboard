@@ -13,7 +13,6 @@ import AllCompaniesPage from "./pages/AllCompaniesPage";
 import AllEnquiriesPage from "./pages/AllEnquiriesPage";
 
 export default function Admin() {
-  // Added sample data for the missing variables
   const customers = [
     {
       id: "CUST001",
