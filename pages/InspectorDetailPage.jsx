@@ -143,9 +143,8 @@ export default function InspectorDetailPage({
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-        {/* Profile Section */}
+     
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-xl font-semibold text-gray-900">Profile Information</h2>
@@ -197,7 +196,6 @@ export default function InspectorDetailPage({
           </div>
         </div>
 
-        {/* Enquiry Details */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
           <h2 className="text-xl font-semibold text-gray-900 mb-6">Assigned Enquiries</h2>
           <div className="space-y-6">
@@ -241,9 +239,8 @@ export default function InspectorDetailPage({
           </div>
         </div>
 
-        {/* Stats Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {/* Inspection Stats */}
+  
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-6">Inspection Statistics</h3>
             <div className="space-y-4">
@@ -264,9 +261,7 @@ export default function InspectorDetailPage({
                 <span className="text-xl font-semibold text-indigo-600">89%</span>
               </div>
             </div>
-          </div>
-
-          {/* Payment Stats */}
+          </div
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-6">Payment Statistics</h3>
             <div className="space-y-4">
@@ -290,9 +285,8 @@ export default function InspectorDetailPage({
           </div>
         </div>
 
-        {/* Charts Section */}
         <div className="space-y-6">
-          {/* Acceptance Trend */}
+         
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-6">Acceptance Trend</h3>
             <ResponsiveContainer width="100%" height={300}>
@@ -316,7 +310,6 @@ export default function InspectorDetailPage({
             </ResponsiveContainer>
           </div>
 
-          {/* Inspection Completion Trend */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-6">Inspection Completion Trend</h3>
             <ResponsiveContainer width="100%" height={300}>
@@ -339,8 +332,6 @@ export default function InspectorDetailPage({
               </LineChart>
             </ResponsiveContainer>
           </div>
-
-          {/* Payment Success Trend */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-6">Payment Success Trend</h3>
             <ResponsiveContainer width="100%" height={300}>
