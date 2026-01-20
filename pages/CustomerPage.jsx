@@ -55,7 +55,6 @@ export default function CustomerPage({ onNavigateToDetail, onNavigateToEnquiryDe
         onItemClick={onSidebarItemClick}
       />
 
-      {/* Sticky Hamburger Menu */}
       <button 
         onClick={() => setSidebarOpen(true)}
         className="fixed top-4 left-4 z-30 p-3 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all border border-gray-200 hover:bg-indigo-50"
@@ -63,11 +62,10 @@ export default function CustomerPage({ onNavigateToDetail, onNavigateToEnquiryDe
         <Menu className="w-6 h-6 text-gray-700" />
       </button>
 
-      {/* Header */}
       <header className="bg-white shadow-sm border-b border-gray-200">
         <div className="px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center gap-4">
-            <div className="w-12"></div> {/* Spacer for hamburger menu */}
+            <div className="w-12"></div> 
             <button 
               onClick={onNavigateBack}
               className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
@@ -79,16 +77,14 @@ export default function CustomerPage({ onNavigateToDetail, onNavigateToEnquiryDe
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-        {/* Customers Table */}
+ 
         <CustomersTable 
           customers={customers} 
           onCustomerClick={onNavigateToDetail}
           showFilter={true}
         />
 
-        {/* Revenue and Enquiries Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <StatsCard 
             title="Revenue" 
@@ -106,7 +102,6 @@ export default function CustomerPage({ onNavigateToDetail, onNavigateToEnquiryDe
           />
         </div>
 
-        {/* All Enquiries Table */}
         <EnquiriesTable 
           enquiries={enquiries} 
           showLoadMore={false}
