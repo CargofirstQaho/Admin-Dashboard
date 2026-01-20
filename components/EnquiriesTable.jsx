@@ -36,13 +36,13 @@ export default function EnquiriesTable({
 
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100">
-      {/* Header with optional filter controls */}
+      
       <div className="p-6 border-b border-gray-200">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <h3 className="text-lg font-semibold text-gray-900">All Enquiries</h3>
           {showFilter && (
             <div className="flex flex-col sm:flex-row gap-3">
-              {/* Search input */}
+   
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
                 <input
@@ -53,7 +53,7 @@ export default function EnquiriesTable({
                   className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none"
                 />
               </div>
-              {/* Status filter dropdown */}
+     
               <select
                 value={statusFilter}
                 onChange={(e) => setStatusFilter(e.target.value)}
@@ -69,7 +69,6 @@ export default function EnquiriesTable({
         </div>
       </div>
 
-      {/* Table with optional scrolling */}
       <div className={scrollable ? "overflow-x-auto max-h-[400px] overflow-y-auto" : "overflow-x-auto"}>
         <table className="w-full">
           <thead className={`bg-gray-50 ${scrollable ? 'sticky top-0' : ''}`}>
@@ -101,7 +100,6 @@ export default function EnquiriesTable({
         </table>
       </div>
 
-      {/* Load More button */}
       {showLoadMore && (
         <div className="p-4 border-t border-gray-200">
           <button
