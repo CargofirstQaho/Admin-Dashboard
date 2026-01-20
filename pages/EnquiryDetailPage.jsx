@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowLeft } from 'lucide-react';
 
 export default function EnquiryDetailPage({ enquiry, onNavigateBack }) {
-  // Extended enquiry details
+
   const fullDetails = {
     ...enquiry,
     category: 'Property Inspection',
@@ -34,7 +34,6 @@ export default function EnquiryDetailPage({ enquiry, onNavigateBack }) {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
       <header className="bg-white shadow-sm border-b border-gray-200">
         <div className="px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center gap-4">
@@ -49,9 +48,8 @@ export default function EnquiryDetailPage({ enquiry, onNavigateBack }) {
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-        {/* Basic Information */}
+        
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
           <h2 className="text-xl font-semibold text-gray-900 mb-6">Basic Information</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -100,7 +98,6 @@ export default function EnquiryDetailPage({ enquiry, onNavigateBack }) {
           </div>
         </div>
 
-        {/* Location & Timeline */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Location</h3>
@@ -125,7 +122,6 @@ export default function EnquiryDetailPage({ enquiry, onNavigateBack }) {
           </div>
         </div>
 
-        {/* Requirements & Notes */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Requirements</h3>
           <p className="text-gray-700 leading-relaxed">{fullDetails.requirements}</p>
