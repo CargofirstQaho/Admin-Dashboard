@@ -12,13 +12,12 @@ export default function InspectorsTable({ inspectors, onInspectorClick, showFilt
 
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100">
-      {/* Header with filters */}
       <div className="p-6 border-b border-gray-200">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <h3 className="text-lg font-semibold text-gray-900">All Inspectors</h3>
           {showFilter && (
             <div className="flex flex-col sm:flex-row gap-3">
-              {/* Filter by Name */}
+    
               <div className="relative">
                 <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <circle cx={11} cy={11} r={8} stroke="currentColor" strokeWidth={2} fill="none" />
@@ -32,7 +31,6 @@ export default function InspectorsTable({ inspectors, onInspectorClick, showFilt
                   className="pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none"
                 />
               </div>
-              {/* Filter by Location */}
               <div className="relative">
                 <svg className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <circle cx={11} cy={11} r={8} stroke="currentColor" strokeWidth={2} fill="none" />
@@ -51,10 +49,9 @@ export default function InspectorsTable({ inspectors, onInspectorClick, showFilt
         </div>
       </div>
 
-      {/* Table container */}
       <div className="overflow-x-auto max-h-[400px] overflow-y-auto">
         <table className="w-full">
-          {/* Table Header */}
+          
           <thead className="bg-gray-50 sticky top-0">
             <tr>
               <th className="px-6 py-4 text-left text-sm font-semibold text-gray-700">ID</th>
@@ -65,7 +62,6 @@ export default function InspectorsTable({ inspectors, onInspectorClick, showFilt
               <th className="px-6 py-4 text-left text-sm font-semibold text-gray-700">Rating</th>
             </tr>
           </thead>
-          {/* Table Body */}
           <tbody className="divide-y divide-gray-200">
             {filteredInspectors.map((inspector) => (
               <tr
