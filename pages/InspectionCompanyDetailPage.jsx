@@ -80,7 +80,6 @@ export default function InspectionCompanyDetailPage({ companyId, onNavigateBack 
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
       <header className="bg-white shadow-sm border-b border-gray-200">
         <div className="px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center gap-4">
@@ -95,9 +94,7 @@ export default function InspectionCompanyDetailPage({ companyId, onNavigateBack 
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-        {/* Profile Section */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-xl font-semibold text-gray-900">Company Information</h2>
@@ -149,8 +146,6 @@ export default function InspectionCompanyDetailPage({ companyId, onNavigateBack 
             ))}
           </div>
         </div>
-
-        {/* Enquiry Details */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
           <h2 className="text-xl font-semibold text-gray-900 mb-6">Managed Enquiries</h2>
           <div className="space-y-6">
@@ -192,7 +187,6 @@ export default function InspectionCompanyDetailPage({ companyId, onNavigateBack 
                     </span>
                   </div>
                 </div>
-                {/* Assigned Inspectors Section */}
                 <div className="mt-4 pt-4 border-t border-gray-200">
                   <div className="flex items-start gap-2">
                     <Users className="w-5 h-5 text-indigo-600 mt-0.5" />
@@ -216,9 +210,7 @@ export default function InspectionCompanyDetailPage({ companyId, onNavigateBack 
           </div>
         </div>
 
-        {/* Stats Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {/* Company Stats */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-6">Company Statistics</h3>
             <div className="space-y-4">
@@ -250,7 +242,6 @@ export default function InspectionCompanyDetailPage({ companyId, onNavigateBack 
             </div>
           </div>
 
-          {/* Payment Stats */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-6">Payment Statistics</h3>
             <div className="space-y-4">
@@ -282,10 +273,7 @@ export default function InspectionCompanyDetailPage({ companyId, onNavigateBack 
             </div>
           </div>
         </div>
-
-        {/* Charts Section */}
         <div className="space-y-6">
-          {/* Company Completion Trend */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-6">Company Completion Trend</h3>
             <ResponsiveContainer width="100%" height={300}>
@@ -309,7 +297,6 @@ export default function InspectionCompanyDetailPage({ companyId, onNavigateBack 
             </ResponsiveContainer>
           </div>
 
-          {/* Payment Analysis */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-6">Payment Analysis</h3>
             <ResponsiveContainer width="100%" height={300}>
@@ -330,8 +317,6 @@ export default function InspectionCompanyDetailPage({ companyId, onNavigateBack 
               </BarChart>
             </ResponsiveContainer>
           </div>
-
-          {/* Payment Success Trend */}
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-6">Payment Success Trend</h3>
             <ResponsiveContainer width="100%" height={300}>
