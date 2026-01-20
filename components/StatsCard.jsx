@@ -39,8 +39,7 @@ export default function StatsCard({ title, value, icon: Icon, color = 'indigo', 
           <Icon className="w-6 h-6" />
         </div>
       </div>
-      
-      {/* Subtle Background Decoration */}
+      }
       <div className="absolute -right-4 -bottom-4 opacity-[0.03]">
         <Icon size={100} strokeWidth={1} />
       </div>
